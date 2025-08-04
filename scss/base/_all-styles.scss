@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /*background-color: $background-color;
+    color: $text-color;*/
+    font-family: "Crimson Text", serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
