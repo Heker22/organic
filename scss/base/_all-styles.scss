@@ -23,6 +23,27 @@ a {
     text-decoration: none;
 }
 
+@media screen and (min-width: 750px) {
+
+
+    .container {
+        width: 750px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+
+    .container {
+        width: 1310px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+
 body {
     /*background-color: $background-color;
     color: $text-color;*/
