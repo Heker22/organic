@@ -3,12 +3,89 @@
     padding-top: 16px;
     padding-bottom: 35px;
 
+    &__list {
+        display: none;
+    }
+
     &__logo {
         font-weight: 400;
         font-size: 16px;
+        color: $text-color;
+        transition-property: fill;
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+
+
+        &:hover,
+        &:focus {
+
+            color: $btn-color;
+
+        }
+
     }
 
 
+}
+
+/*&__{}*/
+@media screen and (min-width: 1031px) {
+
+    .header {
+        padding-top: 46px;
+        padding-bottom: 93px;
+
+        &__list {
+            display: block;
+            display: flex;
+            gap: 50;
+        }
+
+        &__link {
+            font-weight: 400;
+            font-size: 16px;
+            color: $text-color;
+            transition-property: fill;
+            transition-duration: 500ms;
+            transition-timing-function: ease;
+
+
+            &:hover,
+            &:focus {
+
+                color: $btn-color;
+
+            }
+
+        }
+
+
+        &__wrap {
+            display: flex;
+            gap: 177px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1310px) {
+
+    .header {
+        padding-top: 77px;
+        padding-bottom: 121px;
+
+        &__list {
+
+          gap: 70px;
+        }
+
+
+        &__wrap {
+            display: flex;
+            gap: 177px;
+        }
+    }
 
 
 }
