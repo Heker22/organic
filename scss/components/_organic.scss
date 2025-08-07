@@ -1,0 +1,126 @@
+/*&__{}*/
+.organic {
+    padding-top: 16px;
+    padding-bottom: 49px;
+    background-color: $section-color;
+
+
+    &__title {
+        font-weight: 400;
+        font-size: 32px;
+        letter-spacing: 0.15em;
+        margin-bottom: 17px;
+        text-align: center;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+
+    }
+
+    &__btn {
+        font-weight: 400;
+        font-size: 13px;
+        letter-spacing: 0.15em;
+        background-color: $btn-color;
+        border: 1px solid $btn-color;
+        padding: 10px 30px;
+        color: $background-color;
+        border-radius: 59px;
+        margin-top: 30px;
+        transition-property: backgroundcolor, color;
+        transition-timing-function: ease;
+        transition-duration: 500ms;
+
+
+        &:hover,
+        &:focus {
+
+            color: $btn-color;
+            background-color: $background-color;
+
+        }
+    }
+
+    &__img {
+        width: 220px;
+        height: 282px;
+        margin: 0 auto;
+    }
+
+}
+
+/*&__{}*/
+@media screen and (min-width: 1031px) {
+
+    .organic {
+        padding-top: 46px;
+        padding-bottom: 101px;
+
+
+        &__title {
+            font-size: 48px;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 20px;
+
+        }
+
+        &__btn {
+            font-size: 20px;
+            padding: 9px 45px;
+            margin-top: 40px;
+
+        }
+
+        &__img {
+            width: 320px;
+            height: 330px;
+        }
+
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 27px;
+        }
+
+    }
+
+
+}
+
+
+/*&__{}*/
+@media screen and (min-width: 1310px){
+
+
+    .organic {
+        padding-top: 61px;
+        padding-bottom: 115px;
+
+
+        &__title {
+            margin-bottom: 54px;
+        }
+
+
+
+        &__btn {
+            margin-top: 54px;
+
+        }
+
+
+        
+        &__wrap {
+            gap: 145px;
+        }
+   }
+
+}
