@@ -361,13 +361,128 @@ body {
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+  margin-bottom: 33px;
 }
 .about__btn {
+  background-color: #fff;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 14px;
   letter-spacing: 0.15em;
   border: 5px solid #8e9a82;
   border-radius: 10px;
-  padding: 15px 7px;
+  padding: 14px 19px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1031px) {
+  /*&__{}*/
+  .about {
+    padding-top: 68px;
+    padding-bottom: 46px;
+  }
+  .about__wrap {
+    display: flex;
+    gap: 40px;
+  }
+  .about__img {
+    width: 251px;
+    height: 508px;
+  }
+  .about__title {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 29px;
+    text-align: left;
+  }
+  .about__text {
+    font-size: 20px;
+    margin-bottom: 53px;
+    text-align: left;
+  }
+  .about__btn {
+    font-size: 20px;
+    padding: 15px 21px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1310px) {
+  /*&__{}*/
+  .about {
+    padding-top: 107px;
+    padding-bottom: 69px;
+  }
+  .about__wrap {
+    gap: 94px;
+  }
+  .about__img {
+    width: 316px;
+    height: 626px;
+  }
+  .about__title {
+    margin-bottom: 37px;
+  }
+  .about__text {
+    margin-bottom: 45px;
+  }
+  .about__btn {
+    padding: 20px 27px;
+    display: inline;
+  }
+}
+/*&__{}*/
+.footer {
+  padding-top: 34px;
+  padding-bottom: 77px;
+  background-color: #dbdbdb;
+}
+.footer__title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin-bottom: 33px;
+}
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+  gap: 9px;
+  width: 257px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__input {
+  border: 5px solid #8e9a82;
+  border-radius: 10px;
+  padding-bottom: 55px;
+}
+.footer__area {
+  border: 5px solid #8e9a82;
+  border-radius: 10px;
+}
+.footer__btn {
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.15em;
+  text-align: center;
+  padding: 14px 72px;
+  border-radius: 10px;
+  border: 2px solid #8e9a82;
+  background-color: #8e9a82;
+  color: #fff;
+  cursor: pointer;
+  transition-property: color, backgroundcolor, border;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+.footer__btn:hover, .footer__btn:focus {
+  color: #8e9a82;
+  background-color: #fff;
+  border: 2px solid #8e9a82;
+}
+.footer__img {
+  width: 243px;
+  height: 345px;
 }/*# sourceMappingURL=main.css.map */
