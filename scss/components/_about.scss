@@ -1,0 +1,38 @@
+/*&__{}*/
+.about {
+    padding-top: 24px;
+    padding-bottom: 90px;
+
+
+    &__img {
+        width: 198px;
+        height: 250px;
+    }
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        margin-bottom: 13px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    &__btn {
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 0.15em;
+        border: 5px solid $btn-color;
+        border-radius: 10px;
+        padding: 15px 7px;
+        cursor: pointer;
+
+    }
+
+}
