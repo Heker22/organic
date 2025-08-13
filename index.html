@@ -58,9 +58,52 @@
                         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
                         of type and scrambled it to make a type specimen book.
                     </p>
-                    <button class="organic__btn" type="button">
+                    <button class="organic__btn" data-modal-open type="button">
                         SHOP NOW
                     </button>
+
+                </div>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal__btn" data-modal-close>
+                        <svg class="modal__icon">
+                            <use class="modal__icon-wrap" href="./img/symbol-defs.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <div class="modal__wrap">
+                        <h2 class="modal__title">
+                            Registration
+                        </h2>
+                        <form class="modal__form">
+                            <label class="form__label">name
+
+                                <input class="form__input" type="text" required minlength="3" maxlength="20"
+                                    placeholder="name">
+
+                            </label>
+                            <label class="form__label">phone
+
+                                <input class="form__input" type="text" required minlength="10" maxlength="15"
+                                    placeholder="phone number">
+
+                            </label>
+                            <label class="form__label">email
+
+                                <input class="form__input" type="text" required minlength="15" maxlength="25"
+                                    placeholder="email">
+
+                            </label>
+                            <label class="form__item" for="">Rewiew<textarea class="comment" rows="10"
+                                    placeholder="insert text">
+
+                        </textarea>
+                                <button class="form__btn">
+                                    Send
+                                </button>
+                            </label>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -157,6 +200,7 @@
             <img src="./img/flower-girl.webp" alt="flower" class="footer__img">
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 
