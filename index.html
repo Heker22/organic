@@ -21,27 +21,44 @@
 
     <header class="header">
         <div class="container">
-            <div class="header__wrap">
-                <a href="./index.html" class="header__logo">ALTANSCHOOL WEB COURSES</a>
-                <nav class="header__nav">
-                    <ul class="header__list">
-                        <li class="header__item">
-                            <a href="#" class="header__link">HOME</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">ABOUT</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">SHOP</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">BLOG</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">CONTACT</a>
-                        </li>
-                    </ul>
-                </nav>
+            <button class="btn menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="menu__container js__menu-container">
+                <button class="menu__toggle js__open-menu">
+                    <svg  fill="currentColor" viewBox="0 0 20 20" width="24" height="24">
+                        <use class="menu__toggle-icon" href="./img/symbol-defs.svg#icon-burger"></use>
+                    </svg>
+                </button>
+                <ul class="mobile__list">
+                    <li class="mobile__item">
+                        <a href="" class="mobile__link">Home</a>
+                    </li>
+                    <li class="mobile__item">
+                        <a href="" class="mobile__link">How it's made </a>
+                    </li>
+                    <li class="mobile__item">
+                        <a href="" class="mobile__link">Our products</a>
+                    </li>
+                    <li class="mobile__item">
+                        <a href="" class="mobile__link">Top sellers</a>
+                    </li>
+                    <li class="mobile__item">
+                        <a href="" class="mobile__link">Chocolate is loved</a>
+                    </li>
+                </ul>
+                <div class="mobile__wrap">
+                    <svg class="mobile__icon">
+                        <use class="mobile__icon-use" href="./img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                    <svg class="mobile__icon">
+                        <use class="mobile__icon-use" href="./img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                </div>
             </div>
         </div>
     </header>
