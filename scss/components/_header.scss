@@ -229,23 +229,48 @@
     height: 100vh;
     right: 0%;
     padding-left: 30px;
-
-}
-
-.mobile__item{
-    margin-top: 8px;
+    top: 0%;
 }
 
 
-.mobile__icon{
+.mobile__wrapper {
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.mobile__list {
+    margin-top: 30px;
+}
+
+.mobile__item {
+    margin-top: 10px;
+}
+
+
+.mobile__wrap{
+    display: flex;
+    gap: 10px;
+}
+
+.mobile__icon {
     width: 18px;
     height: 18px;
-    stroke: $text-color;
+    fill: $text-color;
+    stroke: $background-color;
+    transition-property: stroke;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    cursor: pointer;
+     stroke: $btn-color;
 
 
     &:hover,
     &:focus {
-        stroke: $btn-color;
+       fill: $background-color;
     }
 
 }
@@ -262,8 +287,32 @@
     &:hover,
     &:focus {
 
-        color: $btn-color;
+        color: $background-color;
 
     }
 
+}
+
+
+.menu__toggle {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+
+.menu__toggle-icon {
+    fill: $text-color;
+
+    &:hover,
+    &:focus {
+
+        fill: $background-color;
+
+    }
 }
