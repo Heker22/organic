@@ -43,7 +43,7 @@
     border-radius: 4px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
-/*
+
 .modal__btn {
     width: 30px;
     height: 30px;
@@ -155,63 +155,63 @@
         background-color: $background-color;
 
     }
+}
 
 
+.js__close-menu {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 
-    .js__close-menu {
-        width: 28px;
-        height: 28px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+@media screen and (min-width:734px) {
+    .js-close-menu {
+        right: 50px;
     }
+}
 
-    @media screen and (min-width:734px) {
-        .js-close-menu {
-            right: 50px;
-        }
-    }
+.menu__container {
+    background-color: $section-background;
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    padding-top: 136px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transfrom 250ms ease;
+}
 
-    .menu__container {
-        background-color: $section-background;
-        position: fixed;
-        width: 220px;
-        height: 100%;
-        right: 0;
-        top: 0;
-        padding-top: 136px;
-        padding-left: 30px;
-        padding-bottom: 20px;
-        z-index: 999;
-        transform: translateX(100%);
-        transition: transfrom 250ms ease;
-    }
+.js__open-menu {
+    position: absolute;
+    right: 5px;
+    margin-right: 20px;
+    background-color: transparent;
+    top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
 
-    .js__open-menu {
-        position: absolute;
-        right: 5px;
-        margin-right: 20px;
-        background-color: transparent;
-        top: 20px;
-        border: none;
-        cursor: pointer;
-        width: 28px;
-        height: 28px;
-    }
+.menu__toggle-icon {
+    fill: $background-color;
+}
 
-    .menu__toggle-icon {
-        fill: $background-color;
-    }
+.menu__container.is-open {
+    transform: translateX(0);
 
-    .menu__container.is-open {
-        transform: translateX(0);
+}
 
-    }
-
-    /*.mobile__list {}
+/*.mobile__list {}
 
     .mobile__item {
         margin-bottom: 24px;
@@ -244,7 +244,7 @@
             stroke: $button-color;
         }
     }
-}*/
+}
 
 
 
