@@ -1,7 +1,7 @@
 (() => {
     const mobileMenu = document.querySelector('.js__menu-container');
-    const openMenuBtn = document.querySelector('.js__open-menu');
-    const closeMenuBtn = document.querySelector('.js__close-menu');
+    const openMenuBtn = document.querySelector('.js__close-menu');
+    const closeMenuBtn = document.querySelector('.js__open-menu');
   
     const toggleMenu = () => {
       const isMenuOpen =
