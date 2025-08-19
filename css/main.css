@@ -52,7 +52,6 @@ body {
   margin: 0 auto;
 }
 
-/*&__{}*/
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -225,6 +224,12 @@ body {
   .header__list {
     gap: 74px;
   }
+  .menu__container {
+    display: none;
+  }
+  .js__close-menu {
+    display: none;
+  }
 }
 /*.{}*/
 /*mobile menu*/
@@ -236,6 +241,10 @@ body {
   right: 0%;
   padding-left: 30px;
   top: 0%;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
 }
 
 .mobile__wrapper {
@@ -300,6 +309,24 @@ body {
   fill: #000;
 }
 .menu__toggle-icon:hover, .menu__toggle-icon:focus {
+  fill: #fff;
+}
+
+.btn__menu-toggle {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.menu__toggle-burger {
+  fill: #000;
+}
+.menu__toggle-burger:hover, .menu__toggle-burger:focus {
   fill: #fff;
 }
 

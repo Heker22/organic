@@ -1,4 +1,3 @@
-/*&__{}*/
 .header {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -213,6 +212,14 @@
 
     }
 
+    .menu__container {
+        display: none;
+    }
+
+    .js__close-menu {
+        display: none;
+    }
+
 
 
 }
@@ -232,6 +239,10 @@
     top: 0%;
 }
 
+.menu-container.is-open {
+    transform: translateX(0);
+
+}
 
 .mobile__wrapper {
     height: 94vh;
@@ -251,7 +262,7 @@
 }
 
 
-.mobile__wrap{
+.mobile__wrap {
     display: flex;
     gap: 10px;
 }
@@ -265,12 +276,12 @@
     transition-duration: 500ms;
     transition-timing-function: ease;
     cursor: pointer;
-     stroke: $btn-color;
+    stroke: $btn-color;
 
 
     &:hover,
     &:focus {
-       fill: $background-color;
+        fill: $background-color;
     }
 
 }
@@ -305,8 +316,30 @@
     right: 20px;
 }
 
-
 .menu__toggle-icon {
+    fill: $text-color;
+
+    &:hover,
+    &:focus {
+
+        fill: $background-color;
+
+    }
+}
+
+
+.btn__menu-toggle {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.menu__toggle-burger {
     fill: $text-color;
 
     &:hover,
