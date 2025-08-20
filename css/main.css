@@ -215,6 +215,9 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  .btn__menu-toggle {
+    display: none;
+  }
 }
 @media screen and (min-width: 1310px) {
   .header {
@@ -245,6 +248,7 @@ body {
 
 .menu__container.is-open {
   transform: translateX(100%);
+  display: none;
 }
 
 .mobile__wrapper {
