@@ -241,11 +241,12 @@
     right: 0%;
     padding-left: 30px;
     top: 0%;
+    display: none;
 }
 
 .menu__container.is-open {
-    transform: translateX(100%);
-    display: none;
+    transform: translateX(0%);
+    display: block;
 
 }
 
